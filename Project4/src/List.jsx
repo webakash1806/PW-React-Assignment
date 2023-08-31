@@ -1,7 +1,10 @@
 const List = ({ items }) => {
+    const item = items.map((list) =>
+        <li key={list}>{list}</li>
+    );
     return (
         <>
-            <li>{items}</li>
+            <ul>{item}</ul>
         </>
     )
 }
